@@ -8,3 +8,9 @@
 body {
     font-family: "Open Sans", sans-serif !important;
 }
+
+@media (min-width: 1340px) {
+    .container {
+        max-width: 1340px !important;
+    }
+}
