@@ -34,10 +34,10 @@ const goToNextStep = () => {
 };
 
 // Event listeners for radio buttons
-form.querySelectorAll("input[type=radio]").forEach((radio) => {
-  radio.addEventListener("click", () => {
+form.querySelectorAll(".btn-next").forEach((btn) => {
+    btn.addEventListener("click", () => {
     setTimeout(() => {
       goToNextStep();
-    }, 1000);
+    }, 500);
   });
 });
