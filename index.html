@@ -109,8 +109,33 @@
                     </div>
                 </div>
             </div>
+            <!-- Form -->
             <div>
-                <h1 class="flex bg-white p-8 items-center justify-center">Form</h1>
+                <form id="multiStepForm" class="p-4 shadow-xl rounded-lg bg-[#f6f7f9]">
+                    <!--   Step 1 -->
+                    <div class="step" data-set="step-1">
+                        <h2 class="text-xl md:text-[32px] text-[#1d2329] font-semibold mb-4">What internet speed do you need?</h2>
+                        <div class="mb-4">
+                        <label class="block mb-2 border border-[#e6e6e6] rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option1" class="mr-2" required>
+                            300 Mbps Speed
+                        </label>
+                        <label class="block mb-2 border border-[#e6e6e6] rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option2" class="mr-2" required>
+                            500 Mbps Speed
+                        </label>
+                        <label class="block mb-2 border border-[#e6e6e6] rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option3" class="mr-2" required>
+                            1000 Mbps Speed
+                        </label>
+                        <label class="block mb-2 border border-[#e6e6e6] rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option3" class="mr-2" required>
+                            Help me decide
+                        </label>
+                        </div>
+                        <button type="button" class="btn-next bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Next</button>
+                    </div>
+                </form>
             </div>
             <!-- Hero overlap section -->
             <div class="bg-white p-4 lg:py-[34px] lg:px-[24px] rounded-md max-w-max absolute bottom-[-25%] left-0 shadow-md hidden lg:block">
