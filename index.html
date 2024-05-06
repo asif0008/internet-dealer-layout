@@ -111,34 +111,216 @@
             </div>
             <!-- Form -->
             <div>
-                <form id="multiStepForm" class="p-4 shadow-xl rounded-lg bg-[#f6f7f9]">
+                <form id="multiStepForm" class="p-4 md:p-8 shadow-xl rounded-lg bg-[#f6f7f9]">
+                    <!-- Progress bar -->
+                    <div class="shadow-md w-full mb-3 rounded-full mb-8">
+                        <div class="progress-bar rounded-full w-full bg-[#e5e7eb] overflow-hidden">
+                          <div class="progress-bar-inner h-[35px] text-white font-semibold flex items-center justify-center bg-[#0057b8] transition-all duration-200 rounded-full" style="width: 0;">
+                          </div>
+                        </div>
+                    </div>
+
                     <!--   Step 1 -->
                     <div class="step" data-set="step-1">
-                        <h2 class="text-xl md:text-[32px] text-[#1d2329] font-semibold mb-4">What internet speed do you need?</h2>
+                        <h2 class="text-xl md:text-[32px] text-[#454b52 font-semibold mb-4">What internet speed do you need?</h2>
                         <div class="mb-4">
-                        <label class="block mb-2 border border-[#e6e6e6] rounded-lg p-4 bg-white">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
                             <input type="radio" name="step1" value="option1" class="mr-2" required>
                             300 Mbps Speed
                         </label>
-                        <label class="block mb-2 border border-[#e6e6e6] rounded-lg p-4 bg-white">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
                             <input type="radio" name="step1" value="option2" class="mr-2" required>
                             500 Mbps Speed
                         </label>
-                        <label class="block mb-2 border border-[#e6e6e6] rounded-lg p-4 bg-white">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
                             <input type="radio" name="step1" value="option3" class="mr-2" required>
                             1000 Mbps Speed
                         </label>
-                        <label class="block mb-2 border border-[#e6e6e6] rounded-lg p-4 bg-white">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
                             <input type="radio" name="step1" value="option3" class="mr-2" required>
                             Help me decide
                         </label>
                         </div>
-                        <button type="button" class="btn-next bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Next</button>
+                        <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
+                    </div>
+
+                    <!--   Step 2 -->
+                    <div class="step hidden" data-set="step-2">
+                        <h2 class="text-xl md:text-[32px] text-[#454b52 font-semibold mb-4">Step 2: Question 2</h2>
+                        <div class="mb-4">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option1" class="mr-2" required>
+                            Option 1
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option2" class="mr-2" required>
+                            Option 2
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option3" class="mr-2" required>
+                            Option 3
+                        </label>
+                        </div>
+                        <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
+                    </div>
+
+                    <!--   Step 3 -->
+                    <div class="step hidden" data-set="step-3">
+                        <h2 class="text-xl md:text-[32px] text-[#454b52 font-semibold mb-4">Step 3: Question 3</h2>
+                        <div class="mb-4">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option1" class="mr-2" required>
+                            Option 1
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option2" class="mr-2" required>
+                            Option 2
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option3" class="mr-2" required>
+                            Option 3
+                        </label>
+                        </div>
+                        <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
+                    </div>
+
+                    <!--   Step 4 -->
+                    <div class="step hidden" data-set="step-4">
+                        <h2 class="text-xl md:text-[32px] text-[#454b52 font-semibold mb-4">Step 4: Question 4</h2>
+                        <div class="mb-4">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option1" class="mr-2" required>
+                            Option 1
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option2" class="mr-2" required>
+                            Option 2
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option3" class="mr-2" required>
+                            Option 3
+                        </label>
+                        </div>
+                        <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
+                    </div>
+                    <!--   Step 5 -->
+                    <div class="step hidden" data-set="step-5">
+                        <h2 class="text-xl md:text-[32px] text-[#454b52 font-semibold mb-4">Step 5: Question 5</h2>
+                        <div class="mb-4">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option1" class="mr-2" required>
+                            Option 1
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option2" class="mr-2" required>
+                            Option 2
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option3" class="mr-2" required>
+                            Option 3
+                        </label>
+                        </div>
+                        <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
+                    </div>
+                    <!--   Step 5 -->
+                    <div class="step hidden" data-set="step-6">
+                        <h2 class="text-xl md:text-[32px] text-[#454b52 font-semibold mb-4">Step 5: Question 5</h2>
+                        <div class="mb-4">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option1" class="mr-2" required>
+                            Option 1
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option2" class="mr-2" required>
+                            Option 2
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option3" class="mr-2" required>
+                            Option 3
+                        </label>
+                        </div>
+                        <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
+                    </div>
+                    <!--   Step 5 -->
+                    <div class="step hidden" data-set="step-7">
+                        <h2 class="text-xl md:text-[32px] text-[#454b52 font-semibold mb-4">Step 5: Question 5</h2>
+                        <div class="mb-4">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option1" class="mr-2" required>
+                            Option 1
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option2" class="mr-2" required>
+                            Option 2
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option3" class="mr-2" required>
+                            Option 3
+                        </label>
+                        </div>
+                        <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
+                    </div>
+                    <!--   Step 5 -->
+                    <div class="step hidden" data-set="step-8">
+                        <h2 class="text-xl md:text-[32px] text-[#454b52 font-semibold mb-4">Step 5: Question 5</h2>
+                        <div class="mb-4">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option1" class="mr-2" required>
+                            Option 1
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option2" class="mr-2" required>
+                            Option 2
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option3" class="mr-2" required>
+                            Option 3
+                        </label>
+                        </div>
+                        <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
+                    </div>
+                    <!--   Step 5 -->
+                    <div class="step hidden" data-set="step-9">
+                        <h2 class="text-xl md:text-[32px] text-[#454b52 font-semibold mb-4">Step 5: Question 5</h2>
+                        <div class="mb-4">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option1" class="mr-2" required>
+                            Option 1
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option2" class="mr-2" required>
+                            Option 2
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option3" class="mr-2" required>
+                            Option 3
+                        </label>
+                        </div>
+                        <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
+                    </div>
+                    <!--   Step 5 -->
+                    <div class="step hidden" data-set="step-10">
+                        <h2 class="text-xl md:text-[32px] text-[#454b52 font-semibold mb-4">Step 5: Question 5</h2>
+                        <div class="mb-4">
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option1" class="mr-2" required>
+                            Option 1
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option2" class="mr-2" required>
+                            Option 2
+                        </label>
+                        <label class="block mb-2 border border-[#454b52 rounded-lg p-4 bg-white">
+                            <input type="radio" name="step1" value="option3" class="mr-2" required>
+                            Option 3
+                        </label>
+                        </div>
+                        <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
                     </div>
                 </form>
             </div>
             <!-- Hero overlap section -->
-            <div class="bg-white p-4 lg:py-[34px] lg:px-[24px] rounded-md max-w-max absolute bottom-[-25%] left-0 shadow-md hidden lg:block">
+            <div class="bg-white p-4 lg:py-[34px] lg:px-[24px] rounded-md max-w-[660px] absolute bottom-[-25%] left-0 shadow-md hidden lg:block">
                 <h4 class="text-[13px] text-primary font-bold">
                     Visa® Reward Card Offer
                 </h4>
