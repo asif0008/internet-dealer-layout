@@ -33,4 +33,7 @@ body {
 #multiStepForm .step label input[type=radio]:checked {
   border-width: 6px;
   border-color: #0057b8;
+}
+#multiStepForm .step label input:focus {
+  outline: none !important;
 }/*# sourceMappingURL=style.css.map */
