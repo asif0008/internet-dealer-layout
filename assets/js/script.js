@@ -2,6 +2,8 @@
 const form = document.getElementById("multiStepForm");
 const steps = Array.from(form.querySelectorAll(".step"));
 const backBtn = document.getElementById('backBtn');
+const progressContainer = document.querySelector('.progress-container');
+const loaderAfterFifthStep = document.querySelector('.loader-after-fifth-step');
 
 let currentStep = 0;
 let formData = {};
@@ -33,6 +35,28 @@ const goToNextStep = () => {
     const stepData = collectStepData(steps[currentStep]);
     Object.assign(formData, stepData);
 
+
+    if(currentStep === 5) {
+        loaderAfterFifthStep.classList.remove('hidden');
+        progressContainer.classList.add('hidden');
+        backBtn.classList.add('hidden');
+
+        const internetSpeed = loaderAfterFifthStep.querySelector('.internet-speed');
+        const internetUsage = loaderAfterFifthStep.querySelector('.internet-usage');
+        const time = loaderAfterFifthStep.querySelector('.time');
+
+        internetSpeed.textContent = formData.internetSpeed;
+        internetUsage.textContent = formData.internetUsage;
+        time.textContent = formData.time;
+
+
+        setTimeout(() => {
+            loaderAfterFifthStep.classList.add('hidden');
+            progressContainer.classList.remove('hidden');
+            backBtn.classList.remove('hidden');
+        }, 4000);
+    }
+
     currentStep++;
     updateStepVisibility();
     updateProgressBar();
@@ -60,7 +84,7 @@ form.querySelectorAll(".go-to-next").forEach((btn) => {
     setTimeout(() => {
         goToNextStep();
     }, 500);
-    console.log('form-data:', formData);
+    // console.log('form-data:', formData);
   });
 });
 

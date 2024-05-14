@@ -112,9 +112,9 @@
             </div>
             <!-- Form -->
             <div>
-                <form id="multiStepForm" class="p-4 md:p-8 shadow-xl rounded-lg bg-[#f6f7f9]">
+                <form id="multiStepForm" class="p-4 md:p-8 shadow-xl rounded-lg bg-[#f6f7f9] relative">
                     <!-- Progress bar -->
-                    <div class="shadow-md w-full mb-3 rounded-full mb-8">
+                    <div class="shadow-md w-full mb-3 rounded-full mb-8 progress-container">
                         <div class="progress-bar rounded-full w-full bg-[#e5e7eb] overflow-hidden">
                           <div class="progress-bar-inner h-[25px] text-white text-xs font-semibold flex items-center justify-center bg-[#0057b8] transition-all duration-200 rounded-full" style="width: 0;">
                           </div>
@@ -133,19 +133,19 @@
                         <h2 class="text-lg md:text-[28px] text-[#454b52] font-semibold mb-4">What internet speed do you need?</h2>
                         <div class="mb-4">
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="internet-speed" id="internet-speed" value="300-Mbps-Speed" class="mr-2 go-to-next" required>
+                            <input type="radio" name="internetSpeed" id="internetSpeed" value="300-Mbps-Speed" class="mr-2 go-to-next" required>
                             300 Mbps Speed
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="internet-speed" id="internet-speed" value="500-Mbps-Speed" class="mr-2 go-to-next" required>
+                            <input type="radio" name="internetSpeed" id="internetSpeed" value="500-Mbps-Speed" class="mr-2 go-to-next" required>
                             500 Mbps Speed
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="internet-speed" id="internet-speed" value="1000-Mbps-Speed" class="mr-2 go-to-next" required>
+                            <input type="radio" name="internetSpeed" id="internetSpeed" value="1000-Mbps-Speed" class="mr-2 go-to-next" required>
                             1000 Mbps Speed
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="internet-speed" id="internet-speed" value="help-me-decide" class="mr-2 go-to-next" required>
+                            <input type="radio" name="internetSpeed" id="internetSpeed" value="help-me-decide" class="mr-2 go-to-next" required>
                             Help me decide
                         </label>
                         </div>
@@ -185,23 +185,23 @@
                         <h2 class="text-lg md:text-[28px] text-[#454b52] font-semibold mb-4">What type of internet connection do you currently have?</h2>
                         <div class="mb-4">
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="type-of-internet" value="Fiber" class="mr-2 go-to-next" required>
+                            <input type="radio" name="typeOfInternet" value="Fiber" class="mr-2 go-to-next" required>
                             Fiber
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="type-of-internet" value="Cable" class="mr-2 go-to-next" required>
+                            <input type="radio" name="typeOfInternet" value="Cable" class="mr-2 go-to-next" required>
                             Cable
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="type-of-internet" value="Satellite" class="mr-2 go-to-next" required>
+                            <input type="radio" name="typeOfInternet" value="Satellite" class="mr-2 go-to-next" required>
                             Satellite
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="type-of-internet" value="Don't-know" class="mr-2 go-to-next" required>
+                            <input type="radio" name="typeOfInternet" value="Don't-know" class="mr-2 go-to-next" required>
                             Don't know
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="type-of-internet" value="Other" class="mr-2 go-to-next" required>
+                            <input type="radio" name="typeOfInternet" value="Other" class="mr-2 go-to-next" required>
                             Other
                         </label>
                         </div>
@@ -213,19 +213,19 @@
                         <h2 class="text-lg md:text-[28px] text-[#454b52] font-semibold mb-4">What do you use internet for the most?</h2>
                         <div class="mb-4">
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="internet-reason" value="Browsing" class="mr-2 go-to-next" required>
+                            <input type="radio" name="internetUsage" value="Browsing" class="mr-2 go-to-next" required>
                             Browsing/Shopping
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="internet-reason" value="Work" class="mr-2 go-to-next" required>
+                            <input type="radio" name="internetUsage" value="Work" class="mr-2 go-to-next" required>
                             Work
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="internet-reason" value="Streaming-videos" class="mr-2 go-to-next" required>
+                            <input type="radio" name="internetUsage" value="Streaming-videos" class="mr-2 go-to-next" required>
                             Streaming videos
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="internet-reason" value="All-other" class="mr-2 go-to-next" required>
+                            <input type="radio" name="internetUsage" value="All-other" class="mr-2 go-to-next" required>
                             All/Other
                         </label>
                         </div>
@@ -236,25 +236,25 @@
                         <h2 class="text-lg md:text-[28px] text-[#454b52] font-semibold mb-4">How soon do you need service?</h2>
                         <div class="mb-4">
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="ASAP" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="ASAP" class="mr-2 go-to-next" required>
                             ASAP
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="within-a-week-or-so" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="within-a-week-or-so" class="mr-2 go-to-next" required>
                             Within a week or so
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="within-a-month" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="within-a-month" class="mr-2 go-to-next" required>
                             Within a month
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="not-sure" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="not-sure" class="mr-2 go-to-next" required>
                             I'm not sure
                         </label>
                         </div>
                         <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
                     </div>
-                    <!--   Step 5 -->
+                    <!--   Step 6 -->
                     <div class="step hidden" data-set="step-6">
                         <h2 class="text-lg md:text-[28px] text-[#454b52] font-semibold mb-4">What is your zip code?</h2>
                         <p class="bg-blue-100 text-sm px-3 py-4 rounded-md mb-3">
@@ -268,77 +268,108 @@
                         </div>
                         <button type="button" class="btn-next go-to-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
                     </div>
-                    <!--   Step 5 -->
+                    <!-- Loader  -->
+                    <div class="loader-after-fifth-step hidden absolute inset-0 bg-[#f6f7f9] rounded-lg flex flex-col items-center justify-center gap-2">
+                        <span class="loader"></span>
+                        <div class="flex items-center gap-1">
+                            <p class="text-sm text-[#1d2329]">Internet speed:</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00e100" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" style="
+                                  fill: #00e100;
+                              "></path>
+                            </svg>
+                            <p class="text-sm text-[#1d2329] internet-speed"></p>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <p class="text-sm text-[#1d2329]">Internet usage:</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00e100" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" style="
+                                  fill: #00e100;
+                              "></path>
+                            </svg>
+                            <p class="text-sm text-[#1d2329] internet-usage"></p>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <p class="text-sm text-[#1d2329]">Start date:</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00e100" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" style="
+                                  fill: #00e100;
+                              "></path>
+                            </svg>
+                            <p class="text-sm text-[#1d2329] time"></p>
+                        </div>
+                    </div>
+                    <!--   Step 7 -->
                     <div class="step hidden" data-set="step-7">
                         <h2 class="text-lg md:text-[28px] text-[#454b52] font-semibold mb-4">Step 5: Question 5</h2>
                         <div class="mb-4">
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option1" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option1" class="mr-2 go-to-next" required>
                             Option 1
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option2" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option2" class="mr-2 go-to-next" required>
                             Option 2
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option3" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option3" class="mr-2 go-to-next" required>
                             Option 3
                         </label>
                         </div>
                         <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
                     </div>
-                    <!--   Step 5 -->
+                    <!--   Step 8 -->
                     <div class="step hidden" data-set="step-8">
                         <h2 class="text-lg md:text-[28px] text-[#454b52] font-semibold mb-4">Step 5: Question 5</h2>
                         <div class="mb-4">
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option1" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option1" class="mr-2 go-to-next" required>
                             Option 1
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option2" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option2" class="mr-2 go-to-next" required>
                             Option 2
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option3" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option3" class="mr-2 go-to-next" required>
                             Option 3
                         </label>
                         </div>
                         <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
                     </div>
-                    <!--   Step 5 -->
+                    <!--   Step 9 -->
                     <div class="step hidden" data-set="step-9">
                         <h2 class="text-lg md:text-[28px] text-[#454b52] font-semibold mb-4">Step 5: Question 5</h2>
                         <div class="mb-4">
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option1" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option1" class="mr-2 go-to-next" required>
                             Option 1
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option2" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option2" class="mr-2 go-to-next" required>
                             Option 2
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option3" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option3" class="mr-2 go-to-next" required>
                             Option 3
                         </label>
                         </div>
                         <button type="button" class="btn-next w-full text-white p-4 rounded-lg bg-[#0057b8] hover:bg-blue-600 text-md font-semibold">Next</button>
                     </div>
-                    <!--   Step 5 -->
+                    <!--   Step 10 -->
                     <div class="step hidden" data-set="step-10">
                         <h2 class="text-lg md:text-[28px] text-[#454b52] font-semibold mb-4">Step 5: Question 5</h2>
                         <div class="mb-4">
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option1" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option1" class="mr-2 go-to-next" required>
                             Option 1
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option2" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option2" class="mr-2 go-to-next" required>
                             Option 2
                         </label>
                         <label class="block mb-3 border border-[#cccccc] rounded-lg p-4 bg-white">
-                            <input type="radio" name="Time" value="option3" class="mr-2 go-to-next" required>
+                            <input type="radio" name="time" value="option3" class="mr-2 go-to-next" required>
                             Option 3
                         </label>
                         </div>
