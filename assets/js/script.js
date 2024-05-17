@@ -42,7 +42,6 @@ const goToNextStep = () => {
       backBtn.classList.remove('hidden');
     }
 
-
     if(currentStep === 5) {
         loaderAfterFifthStep.classList.remove('hidden');
         progressContainer.classList.add('hidden');
@@ -64,13 +63,27 @@ const goToNextStep = () => {
         }, 4000);
     }
 
+    if(currentStep === 7) {
+      backBtn.classList.add('hidden');
+      const internetSpeed = document.querySelector('.internet-speed1');
+      const internetUsage = document.querySelector('.internet-usage1');
+
+      internetSpeed.textContent = formData.internetSpeed;
+      internetUsage.textContent = formData.internetUsage;
+    }
+
     currentStep++;
     updateStepVisibility();
     updateProgressBar();
   }
 };
 
-const goToPreviousStep = () => {
+const goToPreviousStep = (e) => {
+
+  if(e) {
+    e.preventDefault();
+  }
+
   if(currentStep > 0) {
     // Remove form data for current step
     delete formData[steps[currentStep].dataset.set];
@@ -81,8 +94,8 @@ const goToPreviousStep = () => {
   }
 };
 
-backBtn.addEventListener('click', () => {
-  goToPreviousStep();
+backBtn.addEventListener('click', (e) => {
+  goToPreviousStep(e);
 });
 
 // Event listeners for radio buttons
@@ -91,7 +104,7 @@ form.querySelectorAll(".go-to-next").forEach((btn) => {
     setTimeout(() => {
         goToNextStep();
     }, 500);
-    console.log('form-data:', formData);
+    // console.log('form-data:', formData);
   });
 });
 
