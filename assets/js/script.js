@@ -8,6 +8,8 @@ const loaderAfterFifthStep = document.querySelector('.loader-after-fifth-step');
 let currentStep = 0;
 let formData = {};
 
+backBtn.classList.add('hidden');
+
 const updateStepVisibility = () => {
   steps.forEach((step, index) => {
     if (index === currentStep) {
@@ -22,7 +24,7 @@ const updateProgressBar = () => {
   const progressBarInner = document.querySelector(".progress-bar-inner");
   const totalSteps = steps.length;
   const completedSteps = currentStep + 1;
-  const percentage = (completedSteps / totalSteps) * 100;
+  const percentage = Math.round((completedSteps / totalSteps) * 100);
   progressBarInner.style.width = `${percentage}%`;
   progressBarInner.textContent = `${percentage}%`;
 };
@@ -34,6 +36,11 @@ const goToNextStep = () => {
     // Store form data from current step
     const stepData = collectStepData(steps[currentStep]);
     Object.assign(formData, stepData);
+
+    if(currentStep === 0) {
+      console.log('step 2');
+      backBtn.classList.remove('hidden');
+    }
 
 
     if(currentStep === 5) {
@@ -84,22 +91,25 @@ form.querySelectorAll(".go-to-next").forEach((btn) => {
     setTimeout(() => {
         goToNextStep();
     }, 500);
-    // console.log('form-data:', formData);
+    console.log('form-data:', formData);
   });
 });
 
 // Function to collect data from a step
 const collectStepData = (step) => {
   const stepData = {};
-  const inputs = step.querySelectorAll('input');
+  const inputs = step.querySelectorAll('input, select');
 
   inputs.forEach(input => {
     if (input.type === 'radio' && input.checked) {
       stepData[input.name] = input.value;
     } else if (input.type === 'tel' || input.type === 'text' || input.type === 'email') {
       stepData[input.name] = input.value;
+    } else if (input.tagName === 'SELECT') {
+      stepData[input.name] = input.value;
     }
   });
 
   return stepData;
 };
+
